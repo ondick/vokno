@@ -1,14 +1,20 @@
 package com.example.grid_pane;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private TextField Jmeno;
+    private TextField Prijmeni;
+    private TextField Login;
+    private TextField Heslo;
+    private ColorPicker OblibenaBarva;
+    private DatePicker DatumNarozeni;
+    private TextArea Vypis;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onRegistreButtonClick() {
+        Vypis.setText(Jmeno.getText());
     }
 }

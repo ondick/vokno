@@ -23,18 +23,18 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="3" />
-            <TextField GridPane.columnIndex="1" />
+            <TextField fx:id="Prijmeni" prefHeight="25.0" prefWidth="131.0" GridPane.columnIndex="3" />
+            <TextField fx:id="Jmeno" GridPane.columnIndex="1" />
             <Label text="Prijmeni:" GridPane.columnIndex="2" />
             <Label text="Jmeno:" />
             <Label text="login:" GridPane.rowIndex="2" />
-            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="DatumNarozeni" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Datum Narozeni:" GridPane.rowIndex="1" />
             <Label text="Oblibena barva:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Label text="Heslo:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ColorPicker GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="Login" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Heslo" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ColorPicker fx:id="OblibenaBarva" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <HBox prefHeight="13.0" prefWidth="544.0">
@@ -56,7 +56,7 @@
             <RadioButton mnemonicParsing="false" text="Ne" toggleGroup="$souhlas" />
          </children>
       </HBox>
-      <TextArea prefHeight="143.0" prefWidth="544.0" text="Prostor pro poznamky" />
-      <Button mnemonicParsing="false" text="Login" />
+      <TextArea fx:id="Vypis" prefHeight="143.0" prefWidth="544.0" text="Prostor pro poznamky" />
+      <Button fx:id="Login" mnemonicParsing="false" onAction="#onRegistreButtonClick" text="Login" />
    </children>
 </VBox>
