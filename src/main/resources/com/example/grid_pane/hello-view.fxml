@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox prefHeight="417.0" prefWidth="584.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grid_pane.HelloController">
+<VBox prefHeight="499.0" prefWidth="584.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grid_pane.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -40,23 +40,24 @@
       <HBox prefHeight="13.0" prefWidth="544.0">
          <children>
             <Label text="Jazyky ktere ovladam:" />
-            <CheckBox mnemonicParsing="false" text="Anglictina" />
-            <CheckBox mnemonicParsing="false" text="Cestina" />
-            <CheckBox mnemonicParsing="false" text="Nemcina" />
-            <CheckBox mnemonicParsing="false" text="Spanelstina" />
+            <CheckBox fx:id="Anglictina" mnemonicParsing="false" text="Anglictina" />
+            <CheckBox fx:id="Cestina" mnemonicParsing="false" text="Cestina" />
+            <CheckBox fx:id="Nemcina" mnemonicParsing="false" text="Nemcina" />
+            <CheckBox fx:id="Spanelstina" mnemonicParsing="false" text="Spanelstina" />
          </children>
       </HBox>
       <HBox prefHeight="15.0" prefWidth="544.0">
          <children>
             <Label text="Souhlasim s podminkami:" />
-            <RadioButton mnemonicParsing="false" text="Ano">
+            <RadioButton fx:id="Ano" mnemonicParsing="false" text="Ano">
                <toggleGroup>
                   <ToggleGroup fx:id="souhlas" />
                </toggleGroup></RadioButton>
-            <RadioButton mnemonicParsing="false" text="Ne" toggleGroup="$souhlas" />
+            <RadioButton fx:id="Ne" mnemonicParsing="false" text="Ne" toggleGroup="$souhlas" />
          </children>
       </HBox>
-      <TextArea fx:id="Vypis" prefHeight="143.0" prefWidth="544.0" text="Prostor pro poznamky" />
-      <Button fx:id="Login" mnemonicParsing="false" onAction="#onRegistreButtonClick" text="Login" />
+      <TextArea fx:id="Vypis" prefHeight="143.0" prefWidth="544.0" text="Uzivatele" />
+      <Button mnemonicParsing="false" onAction="#onRegistreButtonClick" text="Login" />
+      <Button mnemonicParsing="false" onAction="#onVypisButtonClick" text="Vypis vsech uzivatelu" />
    </children>
 </VBox>
