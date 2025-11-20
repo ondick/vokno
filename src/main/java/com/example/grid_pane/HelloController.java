@@ -40,20 +40,30 @@ public class HelloController {
     protected void onRegistreButtonClick() {
         if (Ano.isSelected()) {
             int pocetJazyku = 0;
+            String aj = "";
+            String cj = "";
+            String nj = "";
+            String sp = "";
             if  (Anglictina.isSelected()) {
                 pocetJazyku++;
 
+                aj = "Anglictina";
             }
             if  (Cestina.isSelected()) {
                 pocetJazyku++;
+                cj = "Cestina";
+
             }
             if  (Nemcina.isSelected()) {
                 pocetJazyku++;
+                nj = "Nemcina";
+
             }
             if  (Spanelstina.isSelected()) {
                 pocetJazyku++;
+                sp = "Spanelstina";
             }
-            Vypis.setText(" Jmeno: "+Jmeno.getText() + " Prijmeni: "+Prijmeni.getText() +" Datum narozeni: "+ DatumNarozeni.getValue()+" Login: "+Jmeno.getText() + " Pocet ovladanych jazyku: "+pocetJazyku);
+            Vypis.setText(" Jmeno: "+Jmeno.getText() + " Prijmeni: "+Prijmeni.getText() +" Datum narozeni: "+ DatumNarozeni.getValue()+" Login: "+Jmeno.getText() + " Pocet ovladanych jazyku: "+pocetJazyku+" Seznam jazyu: "+ aj+cj+nj+sp);
             String jmeno = Jmeno.getText();
             String prijmeni = Prijmeni.getText();
             String login = Login.getText();

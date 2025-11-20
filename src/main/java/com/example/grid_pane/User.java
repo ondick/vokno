@@ -71,13 +71,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return
                 "jmeno='" + jmeno + '\'' +
                 ", prijmeni='" + prijmeni + '\'' +
                 ", login='" + login + '\'' +
                 ", heslo='" + heslo + '\'' +
                 ", datumNarozeni='" + datumNarozeni + '\'' +
-                ", oblibenaBarva='" + oblibenaBarva + '\'' +
-                '}';
+                ", oblibenaBarva='" + oblibenaBarva + '\'' ;
     }
 }
