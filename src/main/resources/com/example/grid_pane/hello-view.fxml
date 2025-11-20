@@ -57,7 +57,7 @@
          </children>
       </HBox>
       <TextArea fx:id="Vypis" prefHeight="143.0" prefWidth="544.0" text="Uzivatele" />
-      <Button mnemonicParsing="false" onAction="#onRegistreButtonClick" text="Login" />
+      <Button  mnemonicParsing="false" onAction="#onRegistreButtonClick" text="Login" />
       <Button mnemonicParsing="false" onAction="#onVypisButtonClick" text="Vypis vsech uzivatelu" />
    </children>
 </VBox>
